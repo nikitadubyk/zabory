@@ -1,0 +1,19 @@
+.btn {
+    width: 220px;
+    height: 46px;
+    border-radius: 10px;
+    border-color: none;
+    border-style: none;
+    background-color: $main-color;
+    color: #fff;
+    transition: 0.5s;
+    &:hover {
+        transform: scale(1.1)
+    }
+    &_second {
+        color: #000;
+        background-color: #fff;
+        width: 100px;
+        height: 46px;
+    }
+}
