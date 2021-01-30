@@ -1,6 +1,8 @@
 .btn {
+    padding: 10px 13px;
+    display: inline-block;
+    text-align: center;
     width: 220px;
-    height: 46px;
     border-radius: 10px;
     border-color: none;
     border-style: none;
@@ -8,6 +10,8 @@
     color: #fff;
     transition: 0.5s;
     &:hover {
+        text-decoration: none;
+        color: #fff;
         transform: scale(1.1)
     }
     &_second {
@@ -15,5 +19,15 @@
         background-color: #fff;
         width: 100px;
         height: 46px;
+        &:hover {
+            color: #000;
+        }
+    }
+    &_link {
+        color: #fff;
+        &:hover {
+            color: #fff;
+            text-decoration: none;
+        }
     }
 }

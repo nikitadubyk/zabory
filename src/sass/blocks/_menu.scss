@@ -24,7 +24,6 @@
         }
     }
     &__phone {
-        font-size: 24px;
         font-weight: 700;
         font-size: 24px;
         line-height: 28px;
@@ -36,4 +35,7 @@
             }
         }
     }
+}
+.hamburger {
+    display: none;
 }
