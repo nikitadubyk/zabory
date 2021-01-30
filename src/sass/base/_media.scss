@@ -2,6 +2,38 @@
     .container {
         width: 960px;
     }
+    .work {
+        &__wrapper {
+            grid-template-columns: repeat(3,300px);
+            gap: 32px;
+        }
+        &__item {
+            width: 300px;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            column-gap: 30px;
+            grid-template: repeat(auto-fit, 300px) / repeat(auto-fit, 300px);
+        }
+        &__img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+    .we {
+        &__item {
+            width: 300px;
+        }
+        &__descr {
+            width: 230px;
+        }
+    }
+    .stage {
+        &__stick {
+            width: 300px;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -27,11 +59,60 @@
             font-size: 40px;
         }
     }
+    .work {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 300px);
+            justify-content: center;
+        }
+    }
+    .we {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 330px;
+        }
+        &__descr {
+            width: 260px;
+        }
+    }
+    .form {
+        &__wrapper {
+            width: 100%;
+        }
+    }
+    .stage {
+        &__item {
+            width: 200px;
+        }
+        &__stick {
+            width: 215px;
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__phone {
+            order: 1;
+        }
+        &__addres {
+            order: 2;
+        }
+        &__menu {
+            margin-top: 25px;
+            order: 3;
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .container {
         width: 540px;
+    }
+    .title_fz36 {
+        font-size: 32px;
     }
     .promo {
         padding: 30px 0 100px 0;
@@ -101,6 +182,62 @@
             }
         }
     }
+    .portfolio {
+        padding: 30px 0 40px 0;
+    }
+    .we {
+        padding: 30px 0 40px 0;
+        &__wrapper {
+            justify-content: center;
+            margin-top: 25px;
+        }
+        &__item {
+            margin-bottom: 25px;
+            width: 400px;
+        }
+        &__descr {
+            width: 330px;
+        }
+    }
+    .form {
+        padding: 50px 0;
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__input {
+            margin-right: 15px;
+            margin-bottom: 15px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &__btn {
+            margin-top: 20px;
+        }
+    }
+    .stage {
+        padding: 30px 0 40px 0;
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        &__item {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        &__circle {
+            margin: 0 auto;
+        }
+        &__stick {
+            display: none;
+        }
+    }
+    .footer {
+        padding: 30px 0 25px 0;
+    }
 }
 
 @media (max-width: 576px) {
@@ -127,6 +264,37 @@
     .menu {
         &__list {
             width: 70%;
+        }
+    }
+    .we {
+        &__item {
+            width: 300px;
+        }
+        &__descr {
+            width: 230px;
+        }
+    }
+    .form {
+        &__title {
+            font-size: 30px;
+        }
+        &__wrapper {
+            margin-top: 35px;
+        }
+        &__input {
+            margin-right: 0;
+        }
+    }
+    .footer {
+        &__phone {
+            width: 150px;
+        }
+        &__menu {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        &__link {
+            margin: 5px 5px;
         }
     }
 }
