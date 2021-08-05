@@ -23,6 +23,10 @@ h2 {
     margin: 0;
 }
 
+a {
+    transition: 0.5s all;
+}
+
 @import 'blocks/title';
 @import 'blocks/btn';
 @import 'blocks/circle';
@@ -35,4 +39,5 @@ h2 {
 @import 'blocks/stage';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/policy';
 @import 'base/media';

@@ -22,8 +22,16 @@
         width: 320px;
         height: 320px;
         object-fit: cover;
+        transition: 0.5s all;
         img {
             width: 100%;
         }
+        &:hover {
+            transform: scale(1.1);
+        }
     }
+}
+
+[data-fancybox="gallery"] {
+    overflow: hidden;
 }
